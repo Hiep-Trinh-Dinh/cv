@@ -40,7 +40,24 @@ h1 {
 }
 .title {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+header .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 25px;
+    font-size: 0.95em;
+}
+header .contact-info a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.95;
+    transition: opacity 0.2s;
+}
+header .contact-info a:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 /* Main content styles */
@@ -110,5 +127,9 @@ footer {
     }
     .skills {
         justify-content: center;
+    }
+    header .contact-info {
+        flex-direction: column;
+        gap: 8px;
     }
 }
